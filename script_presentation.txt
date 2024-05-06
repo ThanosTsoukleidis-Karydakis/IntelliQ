@@ -1,0 +1,68 @@
+1.
+eval `ssh-agent -s`
+ssh-add ~/.ssh/gitkey
+
+
+2.
+git clone git@github.com:ntua/SoftEng22-17.git
+(Τρέχουμε και τη βάση !)
+
+3.
+SoftEng22-17 :
+npm init -y
+npm install @jsdevtools/chai-exec chai chai-http cors csv csv-stringify dotenv express fs json2csv mocha mysql nodemon save-dev
+
+
+4.
+CLI:
+npm init -y
+npm install @jsdevtools/chai-exec axios yargs
+
+5. CLI
+chmod +x createUser.js healthcheck.js resetall.js questionnaire_upd.js resetq.js questionnaire.js question.js doanswer.js getsessionanswers.js getquestionanswers.js
+npm link
+(questionnaire_upd --source example5.json)  
+
+
+
+CLI commands:
+1. healthcheck --format json
+2. questionnaire --questionnaire_id 1 --format csv
+   (question --questionnaire_id 1 --question_id 1000 --format csv
+    question --questionnaire_id 1 --question_id 1001 --format csv
+    question --questionnaire_id 1 --question_id 1002 --format csv
+    question --questionnaire_id 1 --question_id 1003 --format csv
+    question --questionnaire_id 1 --question_id 1004 --format csv
+    question --questionnaire_id 1 --question_id 1005 --format csv
+    question --questionnaire_id 1 --question_id 1006 --format csv
+    question --questionnaire_id 1 --question_id 1007 --format csv
+    question --questionnaire_id 1 --question_id 1008 --format csv
+    question --questionnaire_id 1 --question_id 1009 --format csv
+    question --questionnaire_id 1 --question_id 1010 --format csv
+    question --questionnaire_id 1 --question_id 1011 --format csv
+    question --questionnaire_id 1 --question_id 1012 --format csv
+)
+3. doanswer --questionnaire_id 1 --question_id 1000 --session_id DJFJ --option_id 999
+   doanswer --questionnaire_id 1 --question_id 1001 --session_id DJFJ --option_id 1001
+   doanswer --questionnaire_id 1 --question_id 1002 --session_id DJFJ --option_id 1006
+   doanswer --questionnaire_id 1 --question_id 1003 --session_id DJFJ --option_id 1007
+   doanswer --questionnaire_id 1 --question_id 1004 --session_id DJFJ --option_id 1009
+   doanswer --questionnaire_id 1 --question_id 1006 --session_id DJFJ --option_id 1014
+   doanswer --questionnaire_id 1 --question_id 1011 --session_id DJFJ --option_id 1027
+   doanswer --questionnaire_id 1 --question_id 1007 --session_id DJFJ --option_id 1017
+   doanswer --questionnaire_id 1 --question_id 1009 --session_id DJFJ --option_id 1022
+   doanswer --questionnaire_id 1 --question_id 1010 --session_id DJFJ --option_id 1030
+4. getquestionanswers --questionnaire_id 1 --question_id 1010 --format csv
+5. resetall --format json
+6. questionnaire_upd --source example5.json
+7. (ομοίως με βήμα 2)
+
+___
+
+Στην επίδειξη του Frontend : Προσθήκη ερωτηματολογίου user-test.json (id 60)
+
+Πριν από Testing : (!!!)
+createUser --username 'dimitris@mail.gr' --password 'hello1' --id 2
+
+TESTING:
+Στο API Testing δεν πρέπει να τρέχει η εφαρμογή, στο CLI Testing πρέπει !
