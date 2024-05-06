@@ -1,0 +1,312 @@
+{
+ "questionnaireID": "1",
+ "questionnaireTitle": "MySurvey",
+ "keywords": "Hobbies",
+ "questions": [
+ {
+ "qID": "1000",
+ "qtext": "Gender : ;",
+ "required": "1",
+ "type": "1",
+ "options": [
+ {
+ "optID": "997",
+ "opttxt": "Male",
+ "nextqID": "1001"
+ },
+ {
+    "optID": "998",
+    "opttxt": "Female",
+    "nextqID": "1001"
+    },
+    {
+        "optID": "999",
+        "opttxt": "Other",
+        "nextqID": "1001"
+        }
+ ]
+ },
+ {
+ "qID": "1001",
+ "qtext": "Age :",
+ "required": "1",
+ "type": "1",
+ "options": [
+ {
+ "optID": "1000",
+ "opttxt": "<30",
+ "nextqID": "1003"
+ },
+ {
+ "optID": "1001",
+ "opttxt": "30-50",
+ "nextqID": "1002"
+ },
+ {
+ "optID": "1002",
+ "opttxt": "50-70",
+ "nextqID": "1005"
+ },
+ {
+ "optID": "1003",
+ "opttxt": ">70",
+ "nextqID": "1005"
+ }
+ ]
+ },
+ {
+ "qID": "1002",
+ "qtext": "Favorite Color",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "1004",
+ "opttxt": "Green",
+ "nextqID": "1005"
+ },
+
+{
+ "optID": "1005",
+ "opttxt":"Red",
+ "nextqID": "1003"
+ },
+
+{
+ "optID": "1006",
+ "opttxt":"Yellow",
+ "nextqID": "1003"
+
+}
+
+]
+ },
+
+{
+ "qID": "1003"
+,
+ "qtext":
+"Do you like Football?",
+ "required": "1",
+ "type": "0",
+ "options": [
+
+{
+ "optID": "1007",
+ "opttxt":"Yes"
+,
+ "nextqID": "1004"
+ },
+
+{
+ "optID": "1008"
+,
+ "opttxt":"No"
+,
+ "nextqID": "1005"
+
+}
+
+]
+ },
+
+{
+ "qID": "1004"
+,
+ "qtext":"What is your favorite football team ?",
+ "required": "1",
+ "type": "0",
+ "options": [
+{
+ "optID": "1009",
+ "opttxt":"Panathinaikos",
+ "nextqID": "1006"
+ },
+{
+ "optID": "1010",
+ "opttxt":"Olympiakos ",
+ "nextqID": "1006"
+ },
+{
+ "optID": "1011",
+ "opttxt":"AEK",
+ "nextqID": "1006"
+}
+]
+ },
+{
+ "qID": "1005",
+ "qtext":"Have you ever lived in an island ?",
+ "required": "1",
+ "type": "0",
+ "options": [
+{
+ "optID": "1012",
+ "opttxt":"Yes",
+ "nextqID": "1008"
+ },
+ {
+ "optID": "1013",
+ "opttxt": "No",
+ "nextqID": "1009"
+ }
+ ]
+ },
+ {
+ "qID": "1006",
+ "qtext": "How much do you like tennis ?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "1014",
+ "opttxt": "A lot",
+ "nextqID": "1011"
+ },
+ {
+ "optID": "1015",
+ "opttxt": "Not so much",
+ "nextqID": "1007"
+ },
+ {
+ "optID": "1016",
+ "opttxt": "I love it",
+ "nextqID": "1011"
+ }
+ ]
+ },
+ {
+ "qID": "1007",
+ "qtext": "Do you swim at winter ?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "1017",
+ "opttxt": "Yes",
+ "nextqID": "1009"
+ },
+ {
+ "optID": "1018",
+ "opttxt": "No",
+ "nextqID": "1009"
+ }
+ ]
+ },
+ {
+ "qID": "1008",
+ "qtext": "Do you like fishing ?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "1019",
+ "opttxt": "Not really",
+ "nextqID": "1012"
+ },
+ {
+ "optID": "1020",
+ "opttxt": "A lot",
+ "nextqID": "1007"
+ },
+ {
+ "optID": "1021",
+ "opttxt": "I hate it",
+ "nextqID": "1012"
+ }
+ ]
+ },
+ {
+ "qID": "1009",
+ "qtext": "Are you religious ?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "1022",
+ "opttxt": "Yes",
+ "nextqID": "1010"
+ },
+ {
+ "optID": "1023",
+ "opttxt": "No",
+ "nextqID": "0"
+ }
+ ]
+ },
+ {
+ "qID": "1010",
+ "qtext": "What is your religion ?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "1024",
+ "opttxt": "Protestantism",
+ "nextqID": "0"
+ },
+ {
+"optID": "1029",
+"opttxt": "Christianity",
+"nextqID": "0"
+},
+{
+"optID": "1030",
+"opttxt": "Buddhism",
+"nextqID": "0"
+},
+ {
+ "optID": "1025",
+ "opttxt": "Islam",
+ "nextqID": "0"
+ }
+ ]
+ },
+ {
+"qID": "1011",
+"qtext": "Who is your favorite tennis player ?",
+"required": "1",
+"type": "0",
+"options": [
+{
+"optID": "1026",
+"opttxt": "Novak Djokovic",
+"nextqID": "1007"
+},
+{
+"optID": "1027",
+"opttxt": "Rafael Nadal",
+"nextqID": "1007"
+},
+{
+"optID": "1028",
+"opttxt": "Other",
+"nextqID": "1007"
+}
+]
+},
+{
+"qID": "1012",
+"qtext": "Why don't you like fishing ?",
+"required": "1",
+"type": "0",
+"options": [
+{
+"optID": "1031",
+"opttxt": "I can't kill happy little fish",
+"nextqID": "1007"
+},
+{
+"optID": "1032",
+"opttxt": "It is boring",
+"nextqID": "1009"
+},
+{
+"optID": "1033",
+"opttxt": "Other",
+"nextqID": "1009"
+}
+]
+}
+]
+}

@@ -1,0 +1,397 @@
+html {
+    text-align: center;
+    font-family: "Book Antique";
+}
+
+table-wrapper{
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: rgb(55, 30, 65);
+}
+
+table td, table th {
+    text-align: center;
+    padding: 8px;
+}
+
+table td {
+    border-right: 1px solid rgb(1, 22, 15);
+    font-size: 16px;
+}
+
+table thead th {
+    color: #ffffff;
+    background: #1e2622;
+}
+
+
+table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #4d4d4d;
+}
+
+table tr:nth-child(even) {
+    background: #8f6684;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    table {
+        display: block;
+        width: 100%;
+    }
+    table-wrapper:before{
+        content: "Scroll horizontally >";
+        display: block;
+        text-align: right;
+        font-size: 16px;
+        color: white;
+        padding: 0 0 10px;
+    }
+    table thead, .table tbody, .table thead th {
+        display: block;
+    }
+    table thead th:last-child{
+        border-bottom: none;
+    }
+    table thead {
+        float: left;
+    }
+    table tbody {
+        width: auto;
+        position: relative;
+        overflow-x: auto;
+    }
+    table td, .table th {
+        padding: 20px .625em .625em .625em;
+        height: 60px;
+        vertical-align: middle;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 120px;
+        font-size: 16px;
+        text-overflow: ellipsis;
+    }
+    table thead th {
+        text-align: left;
+        border-bottom: 1px solid #f7f7f9;
+    }
+    table tbody tr {
+        display: table-cell;
+    }
+    table tbody tr:nth-child(odd) {
+        background: none;
+    }
+    table tr:nth-child(even) {
+        background: transparent;
+    }
+    table tr td:nth-child(odd) {
+        background: #F8F8F8;
+        border-right: 1px solid #E6E4E4;
+    }
+    table tr td:nth-child(even) {
+        border-right: 1px solid #E6E4E4;
+    }
+    table tbody td {
+        display: block;
+        text-align: center;
+    }
+}
+
+body {background-color: rgb(16, 1, 22);
+    color:aliceblue;
+      }
+
+      .prob1 {
+        background-color: rgb(16, 1, 22);
+        color:aliceblue;
+      }
+
+
+    
+
+button{
+  align-self: center;
+  background-color: rgb(177, 140, 140);
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 15px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+button:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #39253a;
+    color : rgb(220, 209, 236);
+  }
+
+  
+
+/* .checkbox-rect2 */
+.checkbox-rect2 input[type="checkbox"] {
+    display: none;
+  }
+  .checkbox-rect2 input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 20px;
+    font: 14px/20px "Open Sans", Arial, sans-serif;
+    cursor: pointer;
+
+  }
+  .checkbox-rect2 input[type="checkbox"]:hover + label:hover {
+    color: rgb(197, 126, 192);
+  }
+  .checkbox-rect2 input[type="checkbox"]:hover + label:before { 
+    border: 1px solid #343a3f;
+    box-shadow: 2px 1px 0 #343a3f;
+      }
+  .checkbox-rect2 input[type="checkbox"] + label:last-child {
+    margin-bottom: 0;
+  }
+  .checkbox-rect2 input[type="checkbox"] + label:before {
+    content: "";
+    display: block;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid #343a3f;
+    border-radius: 0.2em;
+    position: absolute;
+    left: 690px;
+    top: 0;
+    -webkit-transition: all 0.2s, background 0.2s ease-in-out;
+    transition: all 0.2s, background 0.2s ease-in-out;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: -2px -1px 0 #343a3f;
+    background: #f3f3f3;
+    
+  }
+  .checkbox-rect2 input[type="checkbox"]:checked + label:before {
+    border: 2px solid #fff;
+    border-radius: 0.3em;
+    background: #50565a;
+    box-shadow: 2px 1px 0 #50565a;
+  }
+  /* .checkbox-rect2 end */
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #1f1537;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #39253a;
+    color: white;
+  }
+
+
+  input[placeholder=Flow] {
+    width: 5%;
+    padding: 4px 1px;
+    margin: 4px 5px;
+    box-sizing: border-box;
+    background-color: #39253a;
+    color : rgb(220, 209, 236);
+  }
+
+.about_us_body{
+    background-color: rgb(16, 1, 22)
+  }
+
+.about_us_page{      
+  font-family: var(--FontSansSerif);       
+
+  font-weight: bold;       
+
+  font-style: italic;       
+
+  font-size: 12pt;       
+
+  line-height: 12pt;       
+
+  text-transform: uppercase;       
+
+  letter-spacing: 2px;       
+
+  color: var(--YellowLight);       
+
+  background-color: rgb(35, 29, 68);      
+
+  padding: 8px 6px 1px 6px;       
+
+  margin-right: 6px; 
+}
+
+input[type=file]::file-selector-button {
+  margin-right: 20px;
+  border: none;
+  background: #40018d;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #5b04f3;
+}
+
+
+
+.lightMode {
+  background: #ccd6cd;
+  color : #2f053d
+}
+.lightMode tbody tr {
+  color : #ffffff
+}
+.lightMode .topnav {
+  background-color : #67515d
+}
+.lightMode input[type=text] {
+  background-color: #aaa0ab;
+  color : rgb(66, 61, 61);
+}
+.lightMode p {
+  background-color: #aaa0ab;
+  color : rgb(66, 61, 61);
+}
+
+.lightMode div[id="answ"] {
+  background-color: #aaa0ab;
+  color : rgb(66, 61, 61);
+}
+
+select {
+  appearance: none;
+  outline: 0;
+  background: rgb(177, 140, 140);
+  background-image: none;
+  color: black;
+  cursor: pointer;
+  block-size: 25px;
+  width: 10%;
+  margin-right: 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.select {
+    display: block;
+    line-height: 3;
+    overflow: hidden;
+    border-radius: .25em;
+    padding-bottom: 10px;
+  }
+
+  .highcharts-figure,
+.highcharts-data-table table {
+    min-width: 320px;
+    max-width: 800px;
+    margin: 1em auto;
+    width: 450px;
+}
+
+.highcharts-data-table table {
+    font-family: Verdana, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid #ebebeb;
+    margin: 10px auto;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.highcharts-data-table th {
+    font-weight: 600;
+    padding: 0.5em;
+}
+
+.highcharts-data-table td,
+.highcharts-data-table th,
+.highcharts-data-table caption {
+    padding: 0.5em;
+}
+
+.highcharts-data-table thead tr,
+.highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en" id="page1">
+    <div class="topnav">
+        <a class="active" href="index.html"><img src="images/logo.png" width="100" height="22"></a>
+        <a href="login.html">Log out</a>
+        <a class="nav-item" id="toggle">🌞</a>
+
+      </div>
+      <h1>Create a new Survey </h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>intelliq</title>
+</head>
+<body>
+    <main>
+        <div>           
+        <label>Title: </label><br>
+        <input type="text"  id="title"><br>
+        
+        <label>Keyword: </label><br>
+        <input type="text" id="keyword">
+        </div>
+        <br>
+        <div>
+        <button id="create-questionnaire-btn">Create Questionnaire</button>
+        <br><br>
+        <form id="upload">
+            <label for="file">Upload a JSON file with a new questionnaire: </label>
+            <input type="file" id="file" accept=".json">
+            <button onclick="upload_message()">Upload</button>
+        </form>
+        <br><br>
+        <button id="show-questionnaires-btn">Show Your Questionnaires</button>
+        <br><br>
+        <div class='button'>
+            <button id="health-btn">System Healthcheck</button>
+            </div>
+            <br>
+        <button id="resetall-btn">Reset the system</button>
+        <br>
+        <section hidden id="resetall_res">
+            <div id = "resetall_result"></div>
+        </section>
+        <br>
+        </div>
+    </main>
+    <script src="index.js"></script>
+    <script>
+        /*Button to see all questionnaires (load showQuestionnaires_admin.html page)*/
+        const getBtn = document.querySelector('#show-questionnaires-btn');
+        getBtn.onclick = function (){
+            location.replace('showQuestionnaires_admin.html');      
+        }
+    </script>
+    <script>
+        /*Button to perform healthcheck to the system*/
+        const healthBtn = document.querySelector('#health-btn');
+        healthBtn.onclick = function () {
+            location.replace('healthcheck.html')
+        }
+    </script>
+    
+<script>
+//message shown when the user uploads a JSON file (new questionnaire)
+function upload_message(){
+ alert('You have just uploaded a .json file with a new questionnaire');
+ location.reload();
+}
+</script>
+
+<script>
+    /* Implementation of switch between dark and light mode */
+    console.log(localStorage.getItem('dark'));
+    var isLight ;
+    let checkbox = document.getElementById("toggle");
+    document.addEventListener('DOMContentLoaded', function () {
+        if(localStorage.getItem('dark')) {
+           modeSwitchToDark();
+           checkbox.innerText = "🌞" ;
+        } 
+    else {
+        modeSwitchToLight();
+        checkbox.innerText = "🌞" ;
+        checkbox.innerText = "🌚";
+    }
+});
+
+checkbox.addEventListener( "click", function() {
+         if(localStorage.getItem('dark')){
+            modeSwitchToLight();
+            localStorage.removeItem('dark');
+        }
+         else {
+            modeSwitchToDark();
+            localStorage.setItem('dark','dark');
+        }
+    });
+
+    
+
+function modeSwitchToLight() {
+  
+  let root = document.body;
+  
+  //isLight ? toggle.innerText = "Light/Dark" : toggle.innerText = "🌚";
+  root.classList.add("lightMode");
+  checkbox.innerText = "🌚";
+}
+function modeSwitchToDark() {
+  
+  let root = document.body;
+  
+  //isLight ? toggle.innerText = "Light/Dark" : toggle.innerText = "🌚";
+  root.classList.remove("lightMode");
+  checkbox.innerText = "🌞" ;
+  
+}
+    
+</script>
+
+</body>
+</html>
+  

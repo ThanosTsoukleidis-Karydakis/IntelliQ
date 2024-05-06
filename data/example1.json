@@ -1,0 +1,284 @@
+{
+ "questionnaireID": "29",
+ "questionnaireTitle": "Genres of music",
+ "keywords": "music",
+ "questions": [
+ {
+ "qID": "50",
+ "qtext": "Gender : ;",
+ "required": "1",
+ "type": "1",
+ "options": [
+ {
+ "optID": "60",
+ "opttxt": "Male",
+ "nextqID": "51"
+ },
+ {
+    "optID": "61",
+    "opttxt": "Female",
+    "nextqID": "51"
+    },
+    {
+        "optID": "62",
+        "opttxt": "Other",
+        "nextqID": "51"
+        }
+ ]
+ },
+ {
+ "qID": "51",
+ "qtext": "What's your favourite genre of music?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "63",
+ "opttxt": "Pop",
+ "nextqID": "52"
+ },
+ {
+ "optID": "64",
+ "opttxt": "Rock",
+ "nextqID": "53"
+ },
+ {
+ "optID": "65",
+ "opttxt": "Classical",
+ "nextqID": "54"
+ },
+ {
+ "optID": "66",
+ "opttxt": "Jazz",
+ "nextqID": "55"
+ }
+ ]
+ },
+ {
+ "qID": "52",
+ "qtext": "Who's your favourite pop artist?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "67",
+ "opttxt": "Madonna",
+ "nextqID": "56"
+ },
+
+{
+ "optID": "68",
+ "opttxt":"Britney Spears",
+ "nextqID": "56"
+ },
+
+{
+ "optID": "69",
+ "opttxt":"Shakira",
+ "nextqID": "56"
+
+}
+
+]
+ },
+
+{
+ "qID": "53"
+,
+ "qtext":
+"What's your favourite subgenre of rock music?",
+ "required": "1",
+ "type": "0",
+ "options": [
+
+{
+ "optID": "70",
+ "opttxt":"Classic Rock"
+,
+ "nextqID": "57"
+ },
+
+{
+ "optID": "71"
+,
+ "opttxt":"New wave/post-punk"
+,
+ "nextqID": "58"
+
+}
+
+]
+ },
+
+{
+ "qID": "54"
+,
+ "qtext":"What is your favorite classical composer?",
+ "required": "1",
+ "type": "0",
+ "options": [
+{
+ "optID": "72",
+ "opttxt":"Mozart",
+ "nextqID": "59"
+ },
+{
+ "optID": "73",
+ "opttxt":"Beethoven ",
+ "nextqID": "59"
+ },
+{
+ "optID": "74",
+ "opttxt":"Dvorak",
+ "nextqID": "59"
+}
+]
+ },
+{
+ "qID": "55",
+ "qtext":"Who's your favourite jazz artist ?",
+ "required": "1",
+ "type": "0",
+ "options": [
+{
+ "optID": "75",
+ "opttxt":"Louis Armstrong",
+ "nextqID": "59"
+ },
+ {
+ "optID": "76",
+ "opttxt": "John Coltrane",
+ "nextqID": "59"
+ }
+ ]
+ },
+ {
+ "qID": "56",
+ "qtext": "Pop music goes well with dance. Do you enjoy dancing?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "77",
+ "opttxt": "A lot",
+ "nextqID": "59"
+ },
+ {
+ "optID": "78",
+ "opttxt": "Not so much",
+ "nextqID": "59"
+ },
+ {
+ "optID": "79",
+ "opttxt": "I love it",
+ "nextqID": "59"
+ }
+ ]
+ },
+ {
+ "qID": "57",
+ "qtext": "What's your favourite Classic Rock band?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "80",
+ "opttxt": "The Doors",
+ "nextqID": "59"
+ },
+ {
+ "optID": "81",
+ "opttxt": "Pink Floyd",
+ "nextqID": "59"
+ }
+ ]
+ },
+ {
+ "qID": "58",
+ "qtext": "What's your favourite new wave/post-punk band?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "82",
+ "opttxt": "Depeche Mode",
+ "nextqID": "59"
+ },
+ {
+ "optID": "83",
+ "opttxt": "The Smiths",
+ "nextqID": "59"
+ },
+ {
+ "optID": "84",
+ "opttxt": "Joy Division",
+ "nextqID": "59"
+ }
+ ]
+ },
+ {
+ "qID": "59",
+ "qtext": "If you were in a band would you rather write music or lyrics?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "85",
+ "opttxt": "Music",
+ "nextqID": "60"
+ },
+ {
+ "optID": "86",
+ "opttxt": "Lyrics",
+ "nextqID": "61"
+ }
+ ]
+ },
+ {
+ "qID": "60",
+ "qtext": "What's the intrument you would play?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "87",
+ "opttxt": "Guitar",
+ "nextqID": "0"
+ },
+ {
+ "optID": "88",
+ "opttxt": "Bass guitar",
+ "nextqID": "0"
+ }, 
+ {
+ "optID": "89",
+ "opttxt": "Drums",
+ "nextqID": "0"
+},
+{
+ "optID": "90",
+ "opttxt": "I would be the singer of course",
+ "nextqID": "0"
+}
+ ]
+ },
+ {
+ "qID": "61",
+ "qtext": "Would you write happy or sad lyrics?",
+ "required": "1",
+ "type": "0",
+ "options": [
+ {
+ "optID": "91",
+ "opttxt": "happy",
+ "nextqID": "0"
+ },
+ {
+ "optID": "92",
+ "opttxt": "sad",
+ "nextqID": "0"
+ }
+]
+}
+ ]
+}

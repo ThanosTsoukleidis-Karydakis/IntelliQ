@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div class="topnav">
+    <a class="active" href="showQuestionnaires.html"><img src="images/logo.png"  width="100" height="22" ></a>
+    <a href="about.html">About</a>
+    <a href="login.html">Log out</a>
+    <a class="nav-item" id="toggle">🌞</a>
+  </div>
+  
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About us</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body class="about_us_body">
+    <main>
+        <h1>About Us</h1>  
+        <br><br>
+        <p class = "about_us_page" type = "text">IntelliQ is an application that allows the user to answer existing questionnaires. The system administrator can create the questionnaires and questionnaire statistics are also available!  
+            In order to join our community, create a free account </p>
+            
+    </main>
+  </body>
+  <script>
+    /* Implementation of switch between dark and light mode */
+    console.log(localStorage.getItem('dark'));
+    var isLight ;
+    let checkbox = document.getElementById("toggle");
+    document.addEventListener('DOMContentLoaded', function () {
+    if(localStorage.getItem('dark')) {
+        modeSwitchToDark();
+        checkbox.innerText = "🌞" ;
+    } 
+    else {
+      modeSwitchToLight();
+      checkbox.innerText = "🌞" ;
+      checkbox.innerText = "🌚";
+    }
+    });
+
+    checkbox.addEventListener( "click", function() {
+         if(localStorage.getItem('dark')){
+             modeSwitchToLight();
+             localStorage.removeItem('dark');
+         }
+         else {
+          modeSwitchToDark();
+          localStorage.setItem('dark','dark');
+        }
+    });
+
+    
+
+function modeSwitchToLight() {
+  
+  let root = document.body;
+  
+  //isLight ? toggle.innerText = "Light/Dark" : toggle.innerText = "🌚";
+  root.classList.add("lightMode");
+  checkbox.innerText = "🌚";
+}
+function modeSwitchToDark() {
+  
+  let root = document.body;
+  
+  //isLight ? toggle.innerText = "Light/Dark" : toggle.innerText = "🌚";
+  root.classList.remove("lightMode");
+  checkbox.innerText = "🌞" ;
+  
+}
+    
+</script>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <div class="topnav">
+        <a class="active" href="login.html"><img src="images/logo.png" width="100" height="22"></a>
+        <a class="nav-item" id="toggle">🌞</a>
+      </div>
+      <h1>Login </h1>
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>intelliq</title>
+</head>
+<body>
+    <main>
+        <div>           
+        <label>Email Address: </label><br>
+        <input type="text"  id="email"><br>
+        
+        <label>Password: </label><br>
+        <input type="text" id="password">
+        </div>
+        <br>
+        <div>
+        <button id="login-btn">Login</button>
+        </div>
+        <section hidden id="wrong_credentials">
+            <h2>Wrong Credentials!</h2>
+        </section>
+    </main>
+    <script src="login.js"></script>
+    <script>
+    /* Implementation of switch between dark and light mode */
+    console.log(localStorage.getItem('dark'));
+    var isLight ;
+    let checkbox = document.getElementById("toggle");
+    document.addEventListener('DOMContentLoaded', function () {
+        if(localStorage.getItem('dark')) {
+              modeSwitchToDark();
+              checkbox.innerText = "🌞" ;
+        } 
+        else {
+            modeSwitchToLight();
+            checkbox.innerText = "🌞" ;
+            checkbox.innerText = "🌚";
+        }
+});
+
+checkbox.addEventListener( "click", function() {
+         if(localStorage.getItem('dark')){
+            modeSwitchToLight();
+            localStorage.removeItem('dark');
+        }
+         else {
+            modeSwitchToDark();
+            localStorage.setItem('dark','dark');
+        }
+    }); 
+
+function modeSwitchToLight() {
+  
+  let root = document.body;
+  
+  //isLight ? toggle.innerText = "Light/Dark" : toggle.innerText = "🌚";
+  root.classList.add("lightMode");
+  checkbox.innerText = "🌚";
+}
+
+function modeSwitchToDark() {
+  
+  let root = document.body;
+  
+  //isLight ? toggle.innerText = "Light/Dark" : toggle.innerText = "🌚";
+  root.classList.remove("lightMode");
+  checkbox.innerText = "🌞" ;
+  
+}
+        
+    </script>
+    
+    
+</body>
+</html>
+  

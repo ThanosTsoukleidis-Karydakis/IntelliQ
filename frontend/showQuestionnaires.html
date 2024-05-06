@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="topnav">
+        <a class="active" href="showQuestionnaires.html"><img src="images/logo.png" width="100" height="22"></a>
+        <a href="about.html">About</a>
+        <a href="login.html">Log out</a>
+       <div class = "sun"> <a class="nav-item" id="toggle">🌞</a></div>
+      </div>
+      
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Questionnaires</title>
+</head>
+<body class="prob1" id="prob">
+    <main id="showSurveys_main">
+        
+        <section class="container">
+            <h2>Search for a Questionnaire</h2>
+            <input type="text" class="table-filter" data-table="order-table" placeholder="Search by title, keyword or ID..." />
+        <h1>Questionnaires</h1>
+        <div>
+            <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+            <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+            <div id="container"></div>
+
+
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+<figure class="highcharts-figure">
+    <div id="container2"></div>
+    <p class="highcharts-description">
+    </p>
+</figure>
+            
+        <table id="table" class="order-table table">
+            <thead>
+                <th>ID</th>
+                <th>Title</th>
+                <th>Keyword</th>
+                <th>Choose Survey</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+        </div>
+    
+   
+    <br><br>
+ 
+</main>
+</body>
+    <script>
+        /* Implementation of switch between dark and light mode */
+    console.log(localStorage.getItem('dark'));
+    var isLight ;
+    let checkbox = document.getElementById("toggle");
+    document.addEventListener('DOMContentLoaded', function () {
+        if(localStorage.getItem('dark')) {
+            modeSwitchToDark();
+            checkbox.innerText = "🌞" ;
+        } 
+    else {
+        modeSwitchToLight();
+        checkbox.innerText = "🌞" ;
+        checkbox.innerText = "🌚";
+    }
+});
+
+checkbox.addEventListener( "click", function() {
+         if(localStorage.getItem('dark')){
+            modeSwitchToLight();
+            localStorage.removeItem('dark');
+        }
+         else {
+            modeSwitchToDark();
+            localStorage.setItem('dark','dark');
+        }
+    });
+
+    
+function modeSwitchToLight() {
+  
+  let root = document.body;
+  
+  //isLight ? toggle.innerText = "Light/Dark" : toggle.innerText = "🌚";
+  root.classList.add("lightMode");
+  checkbox.innerText = "🌚";
+}
+
+function modeSwitchToDark() {
+  
+  let root = document.body;
+  
+  //isLight ? toggle.innerText = "Light/Dark" : toggle.innerText = "🌚";
+  root.classList.remove("lightMode");
+  checkbox.innerText = "🌞" ;
+  
+}
+
+    </script>
+    
+    <script src="showQuestionnaires.js"></script>
+
+</html>
