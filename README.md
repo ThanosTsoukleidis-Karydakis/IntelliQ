@@ -64,9 +64,9 @@ For our collaboration regarding both the code and project management we used Git
 ##  Our Team   Group: softeng2022-17  
 | Name  | NTUA register number (Αριθμός Μητρώου) |
 | ------------- | ------------- |
-|  Athanasios Tsoukleidis-Karydakis | el19009  |
-|  Dimitrios David Gerokonstantis  | el19209  |   
-|  Filippos Sevastakis  |  el19183 |  
+|  [Athanasios Tsoukleidis-Karydakis](https://github.com/ThanosTsoukleidis-Karydakis) | el19009  |
+|  [Dimitrios-David Gerokonstantis](https://github.com/DimitrisDavidGerokonstantis)  | el19209  |   
+|  [Filippos Sevastakis](https://github.com/FilipposSevastakis)  |  el19183 |  
 | Ioannis Karavgoustis  |  el19847 |    
   
 
